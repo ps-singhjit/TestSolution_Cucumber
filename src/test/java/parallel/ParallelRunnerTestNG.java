@@ -1,13 +1,6 @@
 package parallel;
 
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
-
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
-
-import com.qa.util.ConfigReader;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -28,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
 public class ParallelRunnerTestNG extends AbstractTestNGCucumberTests {
 	
 	@Override
-	@DataProvider(parallel = true) //"true" to run all scenarios in parallel
+	@DataProvider(parallel = false) //"true" to run all scenarios in parallel
 	public Object[][] scenarios() {
 		return super.scenarios();
 	}
