@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginApp-LA</title>
+    <script type="text/javascript" defer src="script.js"></script>
+    <style type="text/css">
+        form{
+            width: 600px;
+            margin: 200px auto;            
+        }
+        /* div{
+            width: 150px;
+            margin: 0px auto;            
+        } */
+        label{
+            display: block;
+            padding: 20px;
+            font-size: 25px;           
+        }
+        input{
+            width: 90%;
+            padding: 5px;      
+            border: 1px solid #797979; 
+            font-size: 20px;
+            margin-left: 20px;
+            border-radius: 3px;    
+        }
+        button{
+            margin: 70px;
+            /* margin-left: 350px; */
+            padding: 10px;
+            width: 100px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color:black;
+            background: linear-gradient(90deg,royalblue, lightgreen);
+        }
+        span{
+            display:block;
+            margin-left: 20px;            
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="error"></div>
+    <form id="form" action="/" method="GET">
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" >
+            <span id="msg1"> </span>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+            <span id="msg2"> </span>
+        </div>   
+        <button id="login" type="submit">Login</button>             
+        <div>                                  
+            <span>
+                <label style="color:blue;font-size:18px;" for="message">Hint - Password should be between 8 to 15 chars and cannot be password</label>
+                <label style="color:rgb(255, 102, 0);font-size:18px;" for="message">Credentials</label>
+                <label style="color:blue;font-size:18px;" for="message">Name - user123</label>
+                <label style="color:blue;font-size:18px;" for="message">Password - happycoder123</label> 
+            </span>
+        </div>  
+        
+    </form>
+</body>
+</html>
+
